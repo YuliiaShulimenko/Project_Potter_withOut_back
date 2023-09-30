@@ -1,0 +1,130 @@
+/* Banner.module.css */
+
+.banner_wrapper {
+  margin-top: 70px;
+  position: relative;
+}
+
+.banner_sale {
+  display: flex;
+  gap: 100px;
+  height: 600px;
+}
+
+.slide1 {
+  background-image: linear-gradient(to left, #212123, #352940, #582b53, #832457, #be2958, #d03b66, #e24c74, #da72a4, #cc94c4, #c2b1d3);
+}
+
+.slide2 {
+  background-image: linear-gradient(to left, #212123, #282835, #2f2e47, #363559, #3f3b6c, #604274, #7e4a79, #9a547a, #b66f73, #c29078, #c6b28f, #cbd2b4);
+}
+
+.slide3 {
+  background-image: linear-gradient(to left, #380e0e, #908436, #908862);
+}
+
+.sale_btn {
+  margin-top: 60px;
+  padding: 25px 50px;
+  border-radius: 15px;
+  background-color: white;
+  font-size: 25px;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 0 10px 5px #000000;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.content,
+.image_box {
+  flex: 1;
+}
+
+.title {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.sub_title {
+  margin-top: var(--spacing-ultrasmall);
+  font-size: 65px;
+  font-weight: 700;
+}
+
+.image_box {
+  width: 100%;
+}
+
+.image {
+  height: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1080px) {
+  .banner_sale {
+    gap: var(--spacing-medium);
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .sub_title {
+    font-size: 20px;
+  }
+
+  .content {
+    margin: auto 50px;
+  }
+}
+
+@media (max-width: 990px) {
+  .banner_sale {
+    justify-content: center;
+    position: relative;
+  }
+
+  .image {
+    margin: 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: center 75%;
+  }
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 20px; */
+  position: absolute;
+  height: 30px;
+  width: 500px;
+  background-color: #212123;
+  align-items: center;
+  right: 32%;
+  bottom: 0;
+
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.active {
+  background-color: #582b53; 
+  box-shadow: 0 0 10px 1px  #ffecfe;
+}

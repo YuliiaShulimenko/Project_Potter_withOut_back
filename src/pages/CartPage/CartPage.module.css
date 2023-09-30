@@ -1,0 +1,26 @@
+.main{
+    margin: 50px 30px;
+}
+.title {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom:50px;
+  }
+
+  .back_link {
+    margin-right: 560px;
+    margin-bottom:50px;
+    display: flex;
+    
+    justify-content: flex-end;
+  }
+
+  .cart_list_container {
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    align-items: flex-start;
+  
+  }
+
+  

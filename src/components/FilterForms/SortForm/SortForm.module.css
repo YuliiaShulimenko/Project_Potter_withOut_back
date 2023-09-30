@@ -1,0 +1,18 @@
+.filter_sort {
+    display: flex;
+    align-items: center;
+  }
+  select {
+    padding-left: 10px;
+    width: 200px;
+    height: 40px;
+  border-radius: 7px;
+  box-shadow: 0 0 10px 3px #582b53;
+  outline: none;
+  border: none;
+  margin-left: 50px;
+  }
+.filter_sort label
+{  font-weight: 600;
+  font-size: 20px;
+  margin-right: 5px;}

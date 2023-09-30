@@ -1,0 +1,25 @@
+.seach{
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+    align-items: center;
+    font-size: 30px;
+  
+    
+}
+
+.input {
+    width:500px;
+    padding-left: 10px;
+    height: 40px;
+  border-radius: 7px;
+  box-shadow: 0 0 10px 8px #582b53;
+  outline: none;
+  border: none;
+  }
+
+  i{
+    margin-right: 20px;
+    color: #923f89;
+   
+  }

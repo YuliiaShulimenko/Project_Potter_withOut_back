@@ -1,0 +1,19 @@
+.warning_text{
+    text-align: end;
+    color: rgb(132, 0, 127);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 14px;
+}
+
+.info_text{
+    width: 350px;
+    color: rgb(214, 242, 31);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+}

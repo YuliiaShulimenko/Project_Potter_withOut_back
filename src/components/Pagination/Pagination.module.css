@@ -1,0 +1,15 @@
+.pag{
+     color:rgb(24, 24, 24);
+     text-align: center;
+     font-size: 25px;
+     gap: 30px;
+     height: 40px;
+     width: 40px;
+     box-shadow: 0 0 10px 3px  #582b53;
+     margin: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 5px;
+     
+}

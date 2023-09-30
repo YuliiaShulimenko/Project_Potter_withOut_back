@@ -1,0 +1,26 @@
+.btn_all_categ{
+    border: 2px solid  #8B8B8B;
+    width: 120px;
+    padding: 9px;
+    font-size: 12px;
+    text-align: center;
+    color: #8B8B8B;
+    cursor: pointer;
+}
+.catalog_title h2{
+    font-size: 40px;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+.catalog_title{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin: 50px;
+}
+
+.btn_all_categ:hover{
+   scale: 1.3;
+   font-weight: 700;
+}
+

@@ -1,0 +1,43 @@
+.filter_price input {
+    width: 100px;
+    padding-left: 10px;
+    height: 40px;
+  border-radius: 7px;
+  box-shadow: 0 0 10px 3px #582b53;
+  outline: none;
+  border: none;
+  }
+
+ 
+
+ .filter_price button{
+    background-image: linear-gradient(to right, #003b54, #00727a, #4ba983);
+    width: 60px;
+  
+    height: 40px;
+  border-radius: 7px;
+  box-shadow: 0 0 10px 3px #582b53;
+
+  border: none;
+  color: white;
+  text-align: center;
+  
+
+ }
+
+.form{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row;
+    
+}
+
+.filter_price{display: flex;
+align-items: center;
+gap:30px}
+
+
+.filter_price label{  font-weight: 600;
+    font-size: 20px;
+    margin-right: 5px;}

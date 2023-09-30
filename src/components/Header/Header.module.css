@@ -1,0 +1,84 @@
+.catalog{
+width: 155px;
+height: 69px;
+background-color: #604274;
+border-radius: 5px;
+color: white;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+display: flex;
+font-weight: 700;
+box-shadow: 0 0 10px 3px #582b53;
+cursor: pointer
+
+}
+
+.img{
+    border-radius: 50%;
+    box-shadow: 0 0 10px 3px  #582b53;
+    height: 100px;
+    width: 100px;
+}
+.user{
+    box-shadow: 0 0 10px 3px  #582b53;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    
+}
+
+.user:hover{
+   scale: 1.3;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.img_div{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.cart{cursor: pointer;
+color: white;
+}
+
+.cart img{
+    height: 35px;
+    height: 35px;
+
+}
+.cart:hover{scale: 1.3;
+  
+}
+.catalog:hover{
+    scale: 1.3;
+}
+
+.heart_icon{
+    width: 25px;       
+    height: 25px; 
+    padding: 10px;
+    box-shadow: 0 0 10px 3px  #582b53;
+    border-radius: 50%;
+    color: white;
+  
+}
+
+
+.hard,.accaunt{
+    flex-direction: column;
+    font-size: 10px;
+    display: flex;
+   font-weight: lighter;
+    gap: 4px;
+    align-items: center;
+    height: 50px;
+    justify-content: center
+}
+

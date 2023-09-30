@@ -1,0 +1,109 @@
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  height: 300px;
+  width: 300px;
+}
+
+.product_btn {
+  width: 140px;
+  background-color: rgb(91, 151, 91);
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+  border-radius: 15px;
+  text-align: center;
+}
+.clicked {
+  background-color: rgb(199, 108, 192); 
+  /* Цвет фона при клике */
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 600px;
+  padding: 20px;
+}
+
+.discont_price {
+  font-size: 30px;
+  font-weight: 600px;
+  font-family: Montserrat;
+}
+.price {
+  color: #8b8b8b;
+  font-size: 20px;
+  font-weight: 500px;
+  font-family: Montserrat;
+  text-decoration: line-through;
+}
+
+.price_without {
+  font-size: 30px;
+  font-weight: 600px;
+  font-family: Montserrat;
+}
+
+.discount_percentage {
+  color: red;
+  font-size: 20px;
+  font-weight: 500px;
+  font-family: Montserrat;
+}
+
+.priceWithDisc {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+
+.product_info {
+  margin: 30px 60px;
+}
+
+.product_title {
+  color:grey;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.product_details {
+  display: flex;
+  gap: 120px;
+  align-items: center;
+  align-items: flex-start
+}
+
+.product_img {
+  width: 100%;
+  object-fit: contain;
+
+}
+
+.price_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.product_description {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 412px;
+  align-items: flex-start
+}
+
+.price_main{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}

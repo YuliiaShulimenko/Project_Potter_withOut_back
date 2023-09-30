@@ -1,0 +1,25 @@
+/* Ваш файл стилей (например, App.css) */
+
+.cardForm {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cardInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .cardLogo {
+    display: inline-block;
+    margin-right: 10px;
+    width: 30px;
+    height: 20px;
+  }
+  

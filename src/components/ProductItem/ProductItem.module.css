@@ -1,0 +1,284 @@
+/* 
+
+.prodImg {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.prodItem {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid black;
+  position: relative;
+}
+.product_title {
+  font-size: 18px;
+  text-align: center;
+}
+
+.price_main {
+  margin-top: 20px;
+}
+
+.price_without {
+  font-size: 30px;
+  font-weight: 600px;
+  font-family: Montserrat;
+}
+
+.prodImg {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.img {
+  width: 100%;
+}
+
+.product_image_wrapper {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 25px;
+  margin-bottom: 20px;
+
+  z-index: 1;
+}
+.product_item {
+  position: relative;
+}
+.product_image {
+  width: 100%;
+}
+
+
+
+
+
+
+.product_title {
+  padding: 0 30px;
+  max-width: 300px;
+}
+
+.add_btn {
+  position: absolute;
+  width: fit-content;
+  padding: 15px;
+  height: 60px;
+  background-image: linear-gradient(to right, #830596, #7c2f78, #c3a1c1);
+  border: 4px solid white;
+  border-radius: 21px;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  opacity: 0;
+  bottom: 50%;
+  left: 85px;
+  text-align: center;
+}
+
+.add_btn:hover {
+  background-image: linear-gradient(to right, #830596, #7c2f78, #c3a1c1);
+  color: white;
+  border: 2px solid white;
+  opacity: 1;
+  
+}
+
+/* .product_image_wrapper:hover .add_btn {
+  opacity: 1;
+  cursor: pointer;
+  bottom: var(--spacing-small);
+  left: 10px;
+} */ 
+
+
+.prodItem{
+  position: relative;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+
+ 
+}
+
+.product_image_wrapper{
+ justify-content: center;
+  padding: 10px;
+ display: flex;
+  
+  margin: 0 auto;
+}
+
+.product_image_wrapper img{
+  height: 280px;
+  width: 280px;
+  object-fit: contain;
+
+  
+}
+
+.active{
+  color: #d63ba0;
+}
+.add_btn {
+  visibility: hidden;
+  cursor: pointer;
+  border-radius: 7px;
+  box-shadow: 0 0 10px 8px #d63ba0;
+  
+  padding: 10px;
+  
+  position: absolute;
+  /* bottom: 50%;
+  left:40px; */
+  width: 200px;
+  color: #d63ba0;
+  left:40px;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: white;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+ 
+
+}
+
+.prodItem:hover .add_btn {
+  visibility: visible;
+ 
+}
+
+.product_price_container{
+ 
+  justify-content: space-between;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.priceWithDisc {
+
+  display: flex;
+  align-items: center;
+  width: 300px;
+  justify-content: space-around;
+  
+}
+
+.discount_price {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 500;
+  color: #8b8b8b;
+  text-decoration: line-through;
+}
+
+.discount {
+  color: #ff32a1;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.price_without{
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  padding-left: 30px;
+  width: 100%;
+}
+
+.product_title {
+  padding: 0 20px;
+  max-width: 300px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.clicked {
+  background-color: rgb(63, 8, 117); 
+color: white;
+opacity: 1;
+padding: 25px;
+width: fit-content;
+font-size: 22px;}
+
+.product_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+ 
+}
+
+.product_title a{
+  color: #ff32a1;
+  font-weight: 700;
+}
+
+
+
+.heart_icon {
+       /* Задаем высоту */
+  position: absolute;
+  top:-10px;
+  right: -10px; 
+color: white;
+display: flex;
+    justify-content: center;
+    align-items: center;
+ /* Задаем цвет самой иконки (заполняющей части сердца) */
+}
+
+/*цвет контура сердечка */
+.heart_icon svg {
+  stroke: red;
+  stroke-width: 55px;
+  width: 35px;        /* Задаем ширину */
+  height: 35px;
+}
+
+.liked{
+  color:red
+}
+.rating{
+  margin-bottom:20px ;
+}
+
+
+
+
+
+
+/* 
+overflow: hidden;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        display: -webkit-box;
+        line-clamp: 4;
+        box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical; */
