@@ -1,0 +1,22 @@
+.like_single{
+    display: flex;
+gap:30px;
+padding: 10px 0;
+border-bottom: 1px solid #a7a7a7;
+margin: 20px;
+}
+
+.like_single img{
+    width: 192px;
+    border-radius: 10px;
+    height: 166px;
+    object-fit: cover;
+
+}
+.discr{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    justify-content: space-between;
+}

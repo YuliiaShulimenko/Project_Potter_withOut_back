@@ -42,9 +42,11 @@ export const productsReducer = (state = inicial_state, action) => {
     if (action.payload === "title") {
       state.sort((a, b) => a.title.localeCompare(b.title));
     } else if (action.payload === "price_asc") {
-      state.sort((a, b) => a.price - b.price);
+
+      state.sort((a, b) => (a.discont_price ?  a.discont_price : a.price) - (b.discont_price ?  b.discont_price : b.price));
       //добавить доп проверку на дисконт для сортировки
     } else if (action.payload === "price_desc") {
+      ///////////////ДОПИСАТЬ
       state.sort((a, b) => b.price - a.price);
     } else if (action.payload === "default") {
       state.sort((a, b) => a.id - b.id);

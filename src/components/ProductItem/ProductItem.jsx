@@ -75,7 +75,7 @@ export default function ProductItem({ product }) {
             )}
           </div>
           <p className={s.product_title}>{title_short}
-            <a> Read more</a>
+           Read more
           </p>
           {/* <div className={s.rating}>Rating: {rating}/{stars}</div> */}
         </div>

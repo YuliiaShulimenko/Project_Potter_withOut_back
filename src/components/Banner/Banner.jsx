@@ -1,9 +1,9 @@
 import React, { useState, useRef } from "react";
-import s from "./Banner.module.css"; // Путь к вашему CSS-файлу
+import s from "./Banner.module.css"; 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-// import flowers from "../../images/102.gif";
-import flowers from "../../images/000.png";
+import flowers from "../../images/102.gif";
+
 import ron from "../../images/10.gif";
 import dom from "../../images/15.gif";
 import { Link } from "react-router-dom";

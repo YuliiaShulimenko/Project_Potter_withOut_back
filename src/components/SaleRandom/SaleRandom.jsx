@@ -22,12 +22,14 @@ function SaleRandom() {
     dispaly:"flex",
     justifyContent: "space-between"
   };
-  
+
+  //для того , чтобы пагинатор не отображался на главной странице
+  const location ="home"
   return (
     <div>
       <h2>Sale </h2>
       {/* Передаем массив случайных продуктов в компонент ProductsContainer */}
-      <ProductsContainer products={randomProducts}  containerStyles={containerStyles} />
+      <ProductsContainer products={randomProducts}  containerStyles={containerStyles} location={location}/>
     </div>
   );
 }

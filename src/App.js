@@ -17,6 +17,7 @@ import { useDispatch } from "react-redux";
 import { getAllCategories } from "./requests/catef_request";
 import { getAllProducts } from "./requests/products_request";
 import FavouritesPage from "./pages/FavouritesPage/FavouritesPage";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 
 function App() {
@@ -40,7 +41,7 @@ function App() {
         <Route path="/sale" element={<SalePage />} />
 
         <Route path="/favourites" element={<FavouritesPage />} />
-       
+        <Route path='*' element={<NotFoundPage />} />
       </Routes>
       <Footer />
     </div>
