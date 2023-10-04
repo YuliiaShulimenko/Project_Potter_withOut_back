@@ -12,14 +12,25 @@
 }
 
 .slide1 {
-  background-image: linear-gradient(to left, #212123, #352940, #582b53, #832457, #be2958, #d03b66, #e24c74, #da72a4, #cc94c4, #c2b1d3);
+  background:  url(../../images/00000.jpg); 
+  background-size: cover;
+ 
+  
 }
 
 .slide2 {
-  background-image: linear-gradient(to left, #212123, #282835, #2f2e47, #363559, #3f3b6c, #604274, #7e4a79, #9a547a, #b66f73, #c29078, #c6b28f, #cbd2b4);
+  /* background-image: url(../../images/05.gif);  */
+  background-image: linear-gradient(to left, #0f0e38, #90367d, #908862);
+  background-size: cover;
 }
 
 .slide3 {
+  background-image: linear-gradient(to left, #380e0e, #908436, #908862);
+}
+.slide4 {
+  background-image: linear-gradient(to left, #380e0e, #908436, #908862);
+}
+.slide5 {
   background-image: linear-gradient(to left, #380e0e, #908436, #908862);
 }
 
@@ -105,12 +116,13 @@
   justify-content: center;
   /* margin-top: 20px; */
   position: absolute;
-  height: 30px;
-  width: 500px;
+  height: 40px;
+  width: 200px;
+  border-radius: 15px;
   background-color: #212123;
   align-items: center;
-  right: 32%;
-  bottom: 0;
+  right: 43%;
+  bottom: 50px;
 
 }
 

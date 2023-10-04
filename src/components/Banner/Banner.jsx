@@ -25,6 +25,8 @@ function Banner() {
 
   const slides = [flowers, ron, dom];
 
+  
+
 
   return (
     <div className={s.banner_wrapper}>

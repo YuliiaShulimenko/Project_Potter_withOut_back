@@ -3,6 +3,8 @@ npm install --save @fortawesome/free-solid-svg-icons
 npm install --save @fortawesome/react-fontawesome
 
 
+https://www.maps.ie/create-google-map/
+
 https://skilldesk.starta.university/lesson?filters436934284=id__eq__reciBGZy5eVBOAq2e&filters469453959=id__eq__reciBGZy5eVBOAq2e   пагинация,урок сб консультации 06/05/2023
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

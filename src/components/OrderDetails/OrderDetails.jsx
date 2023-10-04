@@ -19,6 +19,7 @@ export default function OrderDetails() {
     }
 
     // Отправка заказа
+    //вызываем без диспатча тк мы просто отправляем данные, без отрисовки где-то вдальнейшем
     send_order(phoneNumber);
     e.target.reset();
   };
@@ -33,13 +34,15 @@ export default function OrderDetails() {
           <span> $</span>
         </p>
       </div>
+
+
       <form onSubmit={submit}>
         <input
           className={s.input}
           type="tel"
           placeholder="Phone number"
           name="phone"
-          pattern={'\\+[0-9]{11,}'} // Обновленное регулярное выражение
+          pattern={'\\+[0-9]{11,}'} //  маска для валидации номера телефона
           required
         />
         <button className={s.btn}>Order</button>
@@ -47,3 +50,6 @@ export default function OrderDetails() {
     </div>
   );
 }
+
+
+//value: /^(?:\+49|0)[1-9][0-9]*(?:[\s-]?\d+)*$/,
