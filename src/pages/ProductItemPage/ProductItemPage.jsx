@@ -5,6 +5,9 @@ import { getProduct } from "../../requests/products_request";
 import s from "./ProductItemPage.module.css";
 import { addToCartAction } from "../../store/reducers/cart_reducer";
 
+
+
+//   const [clicked, setClicked] = useState(false); не нужен,опустить экшн в ретерн
 function ProductItemPage() {
   const { id_prod } = useParams();
   const dispatch = useDispatch();
@@ -51,7 +54,7 @@ function ProductItemPage() {
               </div>
             )}
           </div>
-<div>Rating:{rating}</div>
+{/* <div>Rating:{rating}</div> */}
           <div
             className={buttonClass}
             //проверить чтобы в корзину прилетало правильно,тк айдишники приходят как строка и число

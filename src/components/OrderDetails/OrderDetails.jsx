@@ -5,7 +5,11 @@ import { send_order } from '../../requests/post_request';
 
 export default function OrderDetails() {
   const cart_state = useSelector((state) => state.cart);
-  const total = cart_state.reduce((acc, { price, count }) => acc + price * count, 0);
+  
+  const total = cart_state.reduce((acc, { price, discont_price, count }) => {
+    const itemPrice = discont_price || price; // Используем discont_price, если он есть, иначе price
+    return acc + itemPrice * count;
+  }, 0);
 
   const submit = (e) => {
     e.preventDefault();
