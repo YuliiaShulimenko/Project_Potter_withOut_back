@@ -41,3 +41,7 @@ gap:30px}
 .filter_price label{  font-weight: 600;
     font-size: 20px;
     margin-right: 5px;}
+
+    .form button{
+      display: none;
+    }

@@ -19,7 +19,7 @@ export const discountItemsAction = (payload) => ({type: DISCOUNT_ITEMS,payload,}
 
 export const productsReducer = (state = inicial_state, action) => {
   if (action.type === LOAD_ALL_PRODUCTS) {
-    return action.payload.map((el) => ({ ...el, show_product: true,showByKeyWord :true}));
+    return action.payload.map((el) => ({ ...el, show_product: true,showByKeyWord :true, sale_products:true}));
 
     //////////////SEARCH_PRODUCTS////////////
   } else if (action.type === SEARCH_PRODUCTS) {
@@ -42,12 +42,14 @@ export const productsReducer = (state = inicial_state, action) => {
     if (action.payload === "title") {
       state.sort((a, b) => a.title.localeCompare(b.title));
     } else if (action.payload === "price_asc") {
-
       state.sort((a, b) => (a.discont_price ?  a.discont_price : a.price) - (b.discont_price ?  b.discont_price : b.price));
-      //добавить доп проверку на дисконт для сортировки
+
+   
+//Не работает
     } else if (action.payload === "price_desc") {
-      ///////////////ДОПИСАТЬ
-      state.sort((a, b) => b.price - a.price);
+      state.sort((a, b) => (b.discont_price ?  b.discont_price : b.price) - (a.discont_price ?  a.discont_price : a.price));
+
+
     } else if (action.payload === "default") {
       state.sort((a, b) => a.id - b.id);
     }
@@ -58,7 +60,9 @@ export const productsReducer = (state = inicial_state, action) => {
     const { min_value, max_value } = action.payload;
     
     return state.map((el) => {
-      if (el.price >= min_value && el.price <= max_value) {
+       if ((el.discont_price ?  el.discont_price : el.price) >= min_value && (el.discont_price ?  el.discont_price : el.price)  <= max_value)
+      // if ( el.price >= min_value && el.price  <= max_value) 
+    {
         el.show_product = true;
       } else {
         el.show_product = false;
@@ -69,12 +73,12 @@ export const productsReducer = (state = inicial_state, action) => {
   } else if (action.type === DISCOUNT_ITEMS) if (action.payload) {
     return state.map(el => {
       if (el.discont_price === null) {
-        el.show_product = false;
+        el.sale_products= false;
       }
       return el
     })
   } else {
-    return state.map(el => ({ ...el, show_product: true}))
+    return state.map(el => ({ ...el, sale_products: true}))
   }
 
   return state;

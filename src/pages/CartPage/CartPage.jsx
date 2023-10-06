@@ -21,7 +21,7 @@ function CartPage() {
       <h2 className={s.title}>Shopping cart</h2>
 
         <Link to="/products/all">
-        <p className={s.back_link}>Back to the store</p>
+        <p className={s.back_link}>Back to the store  </p>
         </Link>
        
         <div className={s.cart_list_container}>

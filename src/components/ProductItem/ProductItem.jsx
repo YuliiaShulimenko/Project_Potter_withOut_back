@@ -74,9 +74,10 @@ export default function ProductItem({ product }) {
              
             )}
           </div>
-          <p className={s.product_title}>{title_short}
-           Read more
-          </p>
+          <p className={s.product_title}>
+  <span>{title_short}</span>
+  <span className={s.read_more}>Read more</span>
+</p>
           {/* <div className={s.rating}>Rating: {rating}/{stars}</div> */}
         </div>
       </Link>

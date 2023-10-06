@@ -41,17 +41,17 @@ function ProductItemPage() {
           />
         </div>
         <div className={s.product_description}>
-          <div className={s.price_main}>
+        <div className={s.product_price_container}>
             {discont_price ? (
               <div className={s.priceWithDisc}>
-                <p className={s.discont_price}>{discont_price}$</p>
+                <p className={s.discount_price}>{discont_price}$</p>
                 <p className={s.price}>{price}$</p>
-                <p className={s.discount_percentage}>{-discount}%</p>
+                <p className={s.discount}>{-discount}%</p>
               </div>
             ) : (
-              <div className={`${s.no_discount_price} ${s.product_details}`}>
+              
                 <p className={s.price_without}>{price}$</p>
-              </div>
+             
             )}
           </div>
 {/* <div>Rating:{rating}</div> */}

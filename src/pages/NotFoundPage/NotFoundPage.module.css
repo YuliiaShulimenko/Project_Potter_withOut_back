@@ -1,0 +1,22 @@
+.error{
+    display: flex;
+    height: 625px;
+
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text h2{
+    font-size:96px;
+    font-weight: bold;
+}
+.text p{
+    font-size:30px;
+    
+}

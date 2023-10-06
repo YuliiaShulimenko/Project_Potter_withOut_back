@@ -141,7 +141,7 @@
   box-shadow: 0 0 10px 8px #d63ba0;
   
   padding: 10px;
-  
+ text-align: center;
   position: absolute;
   /* bottom: 50%;
   left:40px; */
@@ -267,7 +267,11 @@ display: flex;
 }
 
 
-
+.read_more{
+  color: #ff32a1;
+ 
+  font-weight: bold;
+}
 
 
 
