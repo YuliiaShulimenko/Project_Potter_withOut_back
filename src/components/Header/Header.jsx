@@ -19,7 +19,9 @@ function Header() {
     <div className={s.header}>
    {/* /////////// LOGO /////////// */}      
       <div className={s.img_div}>
-        <img src={logo} alt="logo" className={s.img} />
+        
+       <Link to ="/"><img src={logo} alt="logo" className={s.img} /></Link> 
+
         <Link to="/categories/all"><div className={s.catalog}>Catalog</div></Link>
         
       </div>

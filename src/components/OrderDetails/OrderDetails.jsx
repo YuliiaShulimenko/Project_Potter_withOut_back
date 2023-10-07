@@ -18,7 +18,7 @@ export default function OrderDetails() {
     // Проверка номера телефона по регулярному выражению
     const phonePattern = /^\+[0-9]{11,}$/;
     if (!phonePattern.test(phoneNumber)) {
-      alert('Неправильный формат номера телефона');
+      alert('Incorrect phone number format');
       return;
     }
 

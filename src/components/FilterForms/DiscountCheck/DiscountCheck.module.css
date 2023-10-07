@@ -5,11 +5,12 @@ align-items: center;
 display: flex;}
 
 
+
     .filter_discount_title input{
         margin-left: 50px;
         width: 40px;
         height: 40px;
         border-radius: 7px;
-        box-shadow: 0 0 10px 3px #582b53;
+   
      
     }

@@ -2,10 +2,13 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { sortProductsAction } from "../../../store/reducers/products_reducer";
 import s from "./SortForm.module.css";
+import { sortCategoryProductsAction } from "../../../store/reducers/catogory_prod_reducer";
 
-function SortForm() {
+function SortForm({location}) {
   const dispatch = useDispatch();
-  const order = (e) => dispatch(sortProductsAction(e.target.value));
+  const order = (e) => 
+  // dispatch(sortProductsAction(e.target.value));
+  dispatch(location === 'category_products' ? sortCategoryProductsAction(e.target.value) : sortProductsAction(e.target.value))
   //в качестве пейлоуда значение валью
   return (
     <div className={s.filter_sort}>

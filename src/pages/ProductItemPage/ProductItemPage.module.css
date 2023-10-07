@@ -19,17 +19,22 @@
 
 .product_btn {
   width: 340px;
-  background-color: rgb(91, 151, 91);
  
-  color: white;
-  font-size: 18px;
+  box-shadow: 0 0 10px 3px #604274;
+  background-color: white;
+  color: #604274;
+  font-size: 32px;
+  font-weight: bold;
   border-radius: 15px;
-  text-align: center;
   height: 86px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 
 }
 .clicked {
-  background-color: rgb(199, 108, 192); 
+  background-color:#604274; 
+  color: white;
   /* Цвет фона при клике */
 }
 .main {

@@ -6,7 +6,9 @@ import { getAllProducts } from "../../requests/products_request";
 import Pagination from "../Pagination/Pagination";
 
 function ProductsContainer({ products, containerStyles, location }) {
-  products = products.filter((el) => el.showByKeyWord && el.show_product && el.sale_products);
+  products = products.filter(
+    (el) => el.showByKeyWord && el.show_product && el.sale_products
+  );
   // console.log(products);
 
   const dispatch = useDispatch();
@@ -22,13 +24,14 @@ function ProductsContainer({ products, containerStyles, location }) {
   const countElem = Math.ceil(products.length / countTodosPage); //округление с запасом. Для того чтобы сделать кнопочки страниц
 
   return (
-    <div className={s.products_container} style={containerStyles}>
-      {todosPageList.map((el) => (
-        <ProductItem key={el.id} product={el} />
-      ))}
-
-      <div>
-        {location !== "home" && (
+    <div className={s.main}>
+      <div className={s.products_container} style={containerStyles}>
+        {todosPageList.map((el) => (
+          <ProductItem key={el.id} product={el} />
+        ))}
+      </div>
+      <div className={s.paginator}>
+        {location !== "home" && location !== "category_products" && (
           <Pagination
             setCrntPage={setCrntPage}
             countElem={countElem}

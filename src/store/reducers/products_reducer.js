@@ -45,7 +45,7 @@ export const productsReducer = (state = inicial_state, action) => {
       state.sort((a, b) => (a.discont_price ?  a.discont_price : a.price) - (b.discont_price ?  b.discont_price : b.price));
 
    
-//Не работает
+
     } else if (action.payload === "price_desc") {
       state.sort((a, b) => (b.discont_price ?  b.discont_price : b.price) - (a.discont_price ?  a.discont_price : a.price));
 
@@ -70,7 +70,8 @@ export const productsReducer = (state = inicial_state, action) => {
       return el;
     });
 ///////////////DISCOUNT ITEMS///////////////
-  } else if (action.type === DISCOUNT_ITEMS) if (action.payload) {
+  } else if (action.type === DISCOUNT_ITEMS) 
+  if (action.payload) {
     return state.map(el => {
       if (el.discont_price === null) {
         el.sale_products= false;

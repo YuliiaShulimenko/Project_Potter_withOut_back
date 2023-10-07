@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { discountItemsAction } from '../../../store/reducers/products_reducer';
 import s from "./DiscountCheck.module.css"
+import { discountCategoryItemsAction } from '../../../store/reducers/catogory_prod_reducer';
 
-function DiscountCheck() {
+function DiscountCheck({location}) {
 
     const dispatch = useDispatch()
 
@@ -11,7 +12,8 @@ function DiscountCheck() {
     const handleChange= ()=> setCheckboxChecked(!checkboxChecked);
 
 
-    const get_products =e=> dispatch(discountItemsAction(e.target.checked))
+    const get_products =e=> 
+    dispatch(location === 'category_products' ? discountCategoryItemsAction(e.target.checked) : discountItemsAction(e.target.checked))
   return (
     <div>
         <label className={s.filter_discount_title}>Discounted items

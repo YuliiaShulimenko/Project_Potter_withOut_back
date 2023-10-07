@@ -2,6 +2,8 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import ProductsContainer from "../ProductsContainer/ProductsContainer";
+import s from "./SaleRandom.module.css"
+
 
 function SaleRandom() {
   const productsAll = useSelector((store) => store.allProducts);
@@ -35,7 +37,7 @@ function SaleRandom() {
   //для того , чтобы пагинатор не отображался на главной странице,передаем потом пропсом в контейнер
   const location = "home";
   return (
-    <div>
+    <div className={s.sale}>
       <h2 >Sale </h2>
       {/* Передаем массив случайных продуктов в компонент ProductsContainer */}
       <ProductsContainer

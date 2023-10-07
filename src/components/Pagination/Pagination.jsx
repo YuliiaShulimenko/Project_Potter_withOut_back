@@ -16,11 +16,11 @@ function Pagination(props){
     }
     
 
-    const formHandle = (e) => {
-        if (e.key === 'Enter'){
-            setCrntPage((e.target.value > countElem) ? countElem : e.target.value)
-        }
-    }
+    // const formHandle = (e) => {
+    //     if (e.key === 'Enter'){
+    //         setCrntPage((e.target.value > countElem) ? countElem : e.target.value)
+    //     }
+    // }
 
 
     return(
@@ -36,7 +36,7 @@ function Pagination(props){
                 </div>
             )}
         </div>
-        <input onKeyDown={formHandle} placeholder="Введите номер страницы"/>
+        {/* <input onKeyDown={formHandle} placeholder="Введите номер страницы"/> */}
        </div>
     )
 }
