@@ -1,10 +1,10 @@
 import { oneProdAction } from "../store/reducers/product_item_reducer"
 import { allProdAction } from "../store/reducers/products_reducer"
 
-export const getAllProducts = (callback) => {
+export const getAllProducts = (dispatch) => {
     fetch('http://localhost:3333/products/all')
       .then(res => res.json())
-      .then(json => callback(allProdAction(json)))
+      .then(json => dispatch(allProdAction(json)))
   }
 
   export const getProduct = id_prod => {

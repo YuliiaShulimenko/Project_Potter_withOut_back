@@ -1,6 +1,6 @@
 // import React, { useState } from 'react';
 // import { useForm, Controller } from 'react-hook-form';
-// import s from "./ValidationCardForm.module.css";
+// import s from "./ValidationCatdForm.module.css";
 // import visaLogo from "../../images/visa.png";
 // import masterCardLogo from "../../images/MasterCard.png";
 

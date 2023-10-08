@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import s from './OrderDetails.module.css';
 import { send_order } from '../../requests/post_request';
+import ValidationCardForm from '../ValidationCatdForm/ValidationCatdForm';
 
 export default function OrderDetails() {
   const cart_state = useSelector((state) => state.cart);
@@ -51,6 +52,9 @@ export default function OrderDetails() {
         />
         <button className={s.btn}>Order</button>
       </form>
+      <div>
+        {/* <ValidationCardForm/> */}
+      </div>
     </div>
   );
 }

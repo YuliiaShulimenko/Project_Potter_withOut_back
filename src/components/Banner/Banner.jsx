@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import flowers from "../../images/102.gif";
 
-import ron from "../../images/10.gif";
+import ron from "../../images/0102.gif";
 import dom from "../../images/15.gif";
 import { Link } from "react-router-dom";
 

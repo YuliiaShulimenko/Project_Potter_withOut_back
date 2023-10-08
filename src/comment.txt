@@ -2,15 +2,17 @@ npm install --save @fortawesome/fontawesome-svg-core
 npm install --save @fortawesome/free-solid-svg-icons
 npm install --save @fortawesome/react-fontawesome
 
-
-https://www.maps.ie/create-google-map/
+https://www.figma.com/file/yNWvXvjZC0t8d9yBOpeEPy/Garden?type=design&node-id=4743-989&mode=design&t=bZrHg63ejohvlUfe-0 //исходный макет
+https://www.maps.ie/create-google-map/  //добавление гугл карты
 
 https://skilldesk.starta.university/lesson?filters436934284=id__eq__reciBGZy5eVBOAq2e&filters469453959=id__eq__reciBGZy5eVBOAq2e   пагинация,урок сб консультации 06/05/2023
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+https://giphy.com/stories/magical-mischief-04b86a80-50cd //гивки ГП
 
 
+https://codesandbox.io/s/react-credit-card-3pw31?file=/src/App.js:0-3727 //платежная карта
 
 - дописать проверку в редьюсере для сортировки +++++++++
 - убрать кнопку фильтрации и повесить на импуты клики++++++++++

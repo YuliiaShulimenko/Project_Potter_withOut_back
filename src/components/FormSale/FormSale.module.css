@@ -1,17 +1,7 @@
 .form_home {
   display: flex;
   height: 476px;
-  background: linear-gradient(
-    to left,
-    
-    #212123,
-     #352940,
-
-   
-    #95454a,
-    #c37b44,
-    #cbc04e
-  );
+  background-image: linear-gradient(to right, #d7dcc6, #b6d4bb, #8cccbe, #61c1cc, #47b2dc, #41a0cc, #3d8ebc, #397cab, #266682, #234e5c, #23373a, #1f2020);
   display: flex;
   justify-content: space-around;
 }

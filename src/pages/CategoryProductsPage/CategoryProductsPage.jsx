@@ -7,13 +7,20 @@ import FilterForm from "../../components/FilterForms/FilterForm/FilterForm";
 import DiscountCheck from "../../components/FilterForms/DiscountCheck/DiscountCheck";
 import SortForm from "../../components/FilterForms/SortForm/SortForm";
 import s from "./CategoryProductsPage.module.css"
+import { allProdAction } from "../../store/reducers/products_reducer";
+import { products_by_category_Action } from "../../store/reducers/catogory_prod_reducer";
 
 
 function CategoryProductsPage() {
   const { id } = useParams();
   const dispatch = useDispatch();
 
-  useEffect(() => dispatch(getProdByCateg(id)), []);
+  useEffect(() => {
+    dispatch(getProdByCateg(id))
+    return () => {
+      dispatch(products_by_category_Action({category: {}, data: []}))
+    }
+  }, []);
 
   const categProductsItem = useSelector((state) => state.prodCategory);
   // const category_title = useSelector((state) => state.categories)

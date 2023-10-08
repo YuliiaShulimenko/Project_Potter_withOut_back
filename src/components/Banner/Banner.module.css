@@ -12,15 +12,27 @@
 }
 
 .slide1 {
-  background:  url(../../images/00000.jpg); 
+  background: url(../../images/00000.jpg);
   background-size: cover;
- 
-  
 }
 
 .slide2 {
-  /* background-image: url(../../images/05.gif);  */
-  background-image: linear-gradient(to left, #0f0e38, #90367d, #908862);
+  /* background: url(../../images/0102.jpg); */
+  background-image: linear-gradient(
+    to right,
+    #d7dcc6,
+    #b6d4bb,
+    #8cccbe,
+    #61c1cc,
+    #47b2dc,
+    #41a0cc,
+    #3d8ebc,
+    #397cab,
+    #266682,
+    #234e5c,
+    #23373a,
+    #1f2020
+  );
   background-size: cover;
 }
 
@@ -123,7 +135,6 @@
   align-items: center;
   right: 43%;
   bottom: 50px;
-
 }
 
 .dot {
@@ -137,6 +148,6 @@
 }
 
 .active {
-  background-color: #582b53; 
-  box-shadow: 0 0 10px 1px  #ffecfe;
+  background-color: #582b53;
+  box-shadow: 0 0 10px 1px #ffecfe;
 }
