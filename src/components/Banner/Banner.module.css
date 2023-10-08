@@ -39,12 +39,12 @@
 .slide3 {
   background-image: linear-gradient(to left, #380e0e, #908436, #908862);
 }
-.slide4 {
+/* .slide4 {
   background-image: linear-gradient(to left, #380e0e, #908436, #908862);
 }
 .slide5 {
   background-image: linear-gradient(to left, #380e0e, #908436, #908862);
-}
+} */
 
 .sale_btn {
   margin-top: 60px;
@@ -55,7 +55,7 @@
   color: black;
   font-weight: 700;
   cursor: pointer;
-  box-shadow: 0 0 10px 5px #000000;
+  box-shadow: 0 0 10px 3px #4ba983;
 }
 
 .content {
@@ -74,10 +74,11 @@
 .title {
   font-size: 80px;
   font-weight: 700;
+  
 }
 
 .sub_title {
-  margin-top: var(--spacing-ultrasmall);
+
   font-size: 65px;
   font-weight: 700;
 }
@@ -141,13 +142,13 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: white;
   margin: 0 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .active {
-  background-color: #582b53;
+  background-color: #4ba983;
   box-shadow: 0 0 10px 1px #ffecfe;
 }

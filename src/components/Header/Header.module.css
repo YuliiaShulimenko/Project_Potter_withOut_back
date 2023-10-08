@@ -1,7 +1,7 @@
 .catalog{
 width: 155px;
 height: 69px;
-background-color: #604274;
+background-image: linear-gradient(to right, #003b54, #00727a, #4ba983);
 border-radius: 5px;
 color: white;
 justify-content: center;
@@ -9,19 +9,19 @@ align-items: center;
 font-size: 24px;
 display: flex;
 font-weight: 700;
-box-shadow: 0 0 10px 3px #582b53;
+box-shadow: 0 0 10px 3px #4ba983;
 cursor: pointer
 
 }
 
 .img{
     border-radius: 50%;
-    box-shadow: 0 0 10px 3px  #582b53;
+    box-shadow: 0 0 10px 3px #4ba983;
     height: 100px;
     width: 100px;
 }
 .user{
-    box-shadow: 0 0 10px 3px  #582b53;
+    box-shadow: 0 0 10px 3px #4ba983;
     border-radius: 50%;
     height: 45px;
     width: 45px;
@@ -64,10 +64,14 @@ color: white;
     width: 25px;       
     height: 25px; 
     padding: 10px;
-    box-shadow: 0 0 10px 3px  #582b53;
+    box-shadow: 0 0 10px 3px #4ba983;
     border-radius: 50%;
     color: white;
   
+}
+
+.heart_icon:hover{
+    scale: 1.3;
 }
 
 

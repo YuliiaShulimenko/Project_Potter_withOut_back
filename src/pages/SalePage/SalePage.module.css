@@ -1,5 +1,6 @@
-.filter{
+.form{
     display: flex;
     flex-direction: row;
-    margin: 50px;
+
+   padding: 30px;
 }
