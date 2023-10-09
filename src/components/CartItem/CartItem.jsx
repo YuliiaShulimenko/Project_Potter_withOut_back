@@ -27,7 +27,7 @@ function CartItem({ id, title, price, count, discont_price, image }) {
       </div>
       </div>
      
-      <h2 className={s.discount_price}>{discont_price*count ? discont_price*count : price*count}$</h2>
+      <h2 className={s.discount_price}>{discont_price*count ? (discont_price*count).toFixed(2) : (price*count).toFixed(2)}$</h2>
       {discont_price && <h3 className={s.price}>{price}$</h3>}
     
       <span

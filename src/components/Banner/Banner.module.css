@@ -19,7 +19,7 @@
 .slide2 {
   /* background: url(../../images/0102.jpg); */
   background-image: linear-gradient(
-    to right,
+    to left,
     #d7dcc6,
     #b6d4bb,
     #8cccbe,
@@ -64,6 +64,7 @@
   justify-content: center;
   align-items: center;
   color: white;
+  text-align: center;
 }
 
 .content,
@@ -72,14 +73,14 @@
 }
 
 .title {
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 700;
   
 }
 
 .sub_title {
 
-  font-size: 65px;
+  font-size: 55px;
   font-weight: 700;
 }
 

@@ -4,6 +4,7 @@ import FavouritesContainer from '../../components/FavouritesContainer/Favourites
 function FavouritesPage() {
   return (
     <div>
+       <h2> FAVOURITES </h2>
         <FavouritesContainer/>
     </div>
   )

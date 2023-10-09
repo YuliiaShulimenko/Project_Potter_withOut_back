@@ -18,6 +18,7 @@ import { getAllCategories } from "./requests/catef_request";
 import { getAllProducts } from "./requests/products_request";
 import FavouritesPage from "./pages/FavouritesPage/FavouritesPage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+import AccountPage from "./pages/AccountPage/AccountPage";
 
 function App() {
   const dispatch = useDispatch();
@@ -39,6 +40,7 @@ function App() {
         <Route path="/sale" element={<SalePage />} />
 
         <Route path="/favourites" element={<FavouritesPage />} />
+        <Route path="/login" element={<AccountPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />

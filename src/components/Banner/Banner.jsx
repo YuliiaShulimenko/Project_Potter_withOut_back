@@ -3,12 +3,9 @@ import s from "./Banner.module.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import flowers from "../../images/102.gif";
-
 import ron from "../../images/0102.gif";
 import dom from "../../images/15.gif";
 import { Link } from "react-router-dom";
-
-
 
 function Banner() {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -23,15 +20,20 @@ function Banner() {
     beforeChange: (oldIndex, newIndex) => setActiveSlide(newIndex),
   };
 
+  // Define an array of text content corresponding to each slide
+  const textContent = [
+    { title: "Sale %", subTitle: "New season" },
+    { title: "New collection", subTitle: "...soon" },
+    { title: "Gifts to new customers", subTitle: "" },
+  ];
+
   const slides = [flowers, ron, dom];
-
-  
-
 
   return (
     <div className={s.banner_wrapper}>
       <Slider {...settings} ref={(slider) => (sliderRef.current = slider)}>
         {slides.map((image, index) => {
+          const { title, subTitle } = textContent[index];
           return (
             <div
               className={`${s.bannerContainer} ${s[`slide${index + 1}`]}`}
@@ -40,8 +42,8 @@ function Banner() {
             >
               <div className={s.banner_sale}>
                 <div className={s.content}>
-                  <h1 className={s.title}>Sale %</h1>
-                  <h2 className={s.sub_title}>New season</h2>
+                  <h2 className={s.title}>{title}</h2>
+                  <h3 className={s.sub_title}>{subTitle}</h3>
                   <Link to="/sale">
                     <div className={s.sale_btn}>SALE</div>
                   </Link>

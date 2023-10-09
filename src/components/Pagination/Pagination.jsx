@@ -30,7 +30,7 @@ function Pagination(props){
                 <div className={s.pag} 
                 key={elem}
                     onClick={() => setCrntPage(elem)} 
-                    style={{backgroundColor: (elem === crntPage) ? '#582b53': 'white',color:(elem === crntPage) ? 'white': '#582b53'}}
+                    style={{backgroundColor: (elem === crntPage) ? '#4ba983': 'white',color:(elem === crntPage) ? 'white': '#582b53'}}
                 >
                     {elem}
                 </div>

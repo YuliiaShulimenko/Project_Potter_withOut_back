@@ -2,7 +2,8 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import s from './OrderDetails.module.css';
 import { send_order } from '../../requests/post_request';
-import ValidationCardForm from '../ValidationCatdForm/ValidationCatdForm';
+// import ValidationCardForm from '../ValidationCatdForm/ValidationCatdForm';
+
 
 export default function OrderDetails() {
   const cart_state = useSelector((state) => state.cart);
@@ -11,6 +12,8 @@ export default function OrderDetails() {
     const itemPrice = discont_price || price; // Используем discont_price, если он есть, иначе price
     return acc + itemPrice * count;
   }, 0);
+
+  const roundedTotal = total.toFixed(2);
 
   const submit = (e) => {
     e.preventDefault();
@@ -35,7 +38,7 @@ export default function OrderDetails() {
       <div className={s.order_sum}>
         <p className={s.order_text}>Total</p>
         <p className={s.order_amount}>
-          {total}
+          {roundedTotal}
           <span> $</span>
         </p>
    
@@ -53,9 +56,10 @@ export default function OrderDetails() {
         />
         <button className={s.btn}>Order</button>
       </form>
-      <div>
-        {/* <ValidationCardForm/> */}
-      </div>
+      {/* <div>
+        <ValidationCardForm/>
+      </div> */}
+    
     </div>
   );
 }

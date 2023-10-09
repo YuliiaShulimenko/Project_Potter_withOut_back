@@ -7,7 +7,7 @@ function FavouritesContainer() {
   
   
     useEffect(() => {
-      localStorage.setItem('liked', JSON.stringify(like));
+      localStorage.setItem('favourite', JSON.stringify(like));
     }, [like]);
 
   return (

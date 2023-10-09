@@ -2,7 +2,7 @@ const ADD_TO_FAVORITES = "ADD_TO_FAVORITES";
 const DELETE_FROM_FAVORITES = 'DELETE_FROM_FAVORITES';
 const CLEAR_ALL_FAVORITES = 'CLEAR_ALL_FAVORITES';
 
-const defualtState = JSON.parse(localStorage.getItem('cart')) ?? [] //оператор нулевого слияния
+const defualtState = JSON.parse(localStorage.getItem('favourite')) ?? [] //оператор нулевого слияния
 
 export const addToFavouritesAction = (payload) => ({ type: ADD_TO_FAVORITES, payload });
 export const deleteFromFavouriteAction = payload => ({ type: DELETE_FROM_FAVORITES, payload });

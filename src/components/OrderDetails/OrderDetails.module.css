@@ -7,6 +7,7 @@
     box-shadow: 0 0 10px 1px  #ffecfe;
     border-radius: 21px;
     align-self: center;
+   
   }
   
   .order_title {
@@ -63,3 +64,5 @@
     cursor: pointer;
   
   }
+
+  
