@@ -14,11 +14,12 @@ import SalePage from "./pages/SalePage/SalePage";
 import ProductsListPage from "./pages/ProductsListPage/ProductsListPage";
 
 import { useDispatch } from "react-redux";
-import { getAllCategories } from "./requests/catef_request";
-import { getAllProducts } from "./requests/products_request";
+
 import FavouritesPage from "./pages/FavouritesPage/FavouritesPage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import AccountPage from "./pages/AccountPage/AccountPage";
+import { getAllProducts } from "./requests/products_request";
+import { getAllCategories } from "./requests/category_request";
 
 function App() {
   const dispatch = useDispatch();

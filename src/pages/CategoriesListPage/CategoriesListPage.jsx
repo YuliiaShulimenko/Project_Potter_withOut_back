@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import CategoriesContainer from "../../components/CategoriesContainer/CategoriesContainer";
-import { useDispatch, useSelector } from "react-redux";
-import { getAllCategories } from "../../requests/catef_request";
+import {  useSelector } from "react-redux";
+
 
 function CategoriesList() {
   const categories = useSelector((state) => state.categories);

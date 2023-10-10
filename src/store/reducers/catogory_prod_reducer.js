@@ -13,7 +13,7 @@ const SORT_CATEGORY_PRODUCTS = "SORT_CATEGORY_PRODUCTS";
 const FILTER_CATEGORY_PRODUCTS = "FILTER_CATEGORY_PRODUCTS";
 const DISCOUNT_CATEGORY_ITEMS = "DISCOUNT_CATEGORY_ITEMS";
 
-export const products_by_category_Action = (payload) => ({
+export const productsByCategoryAction = (payload) => ({
   type: LOAD_PROD_BY_CATEG,
   payload,
 });
@@ -32,7 +32,7 @@ export const discountCategoryItemsAction = (payload) => ({
 
 
 
-export const products_by_category_Reducer = (state = default_state, action) => {
+export const productsByCategoryReducer = (state = default_state, action) => {
   if (action.type === LOAD_PROD_BY_CATEG) {
     action.payload.data = [
       ...action.payload.data.map((el) => ({

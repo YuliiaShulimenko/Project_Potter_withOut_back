@@ -23,7 +23,7 @@ export const clearFavouritesAction = () => ({ type: CLEAR_ALL_FAVORITES });
             }
           };
 
-          export const liked_products_Reducer = (state = defualtState, action) => {
+          export const likedProductsReducer = (state = defualtState, action) => {
 
         if (action.type === ADD_TO_FAVORITES) {
           return checkLiked(state, action.payload);

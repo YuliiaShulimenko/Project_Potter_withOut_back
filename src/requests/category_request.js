@@ -1,5 +1,5 @@
 import { categAllAction } from "../store/reducers/categories_reducer"
-import { products_by_category_Action } from "../store/reducers/catogory_prod_reducer"
+import { productsByCategoryAction} from "../store/reducers/catogory_prod_reducer"
 
 
 
@@ -18,5 +18,5 @@ export const getAllCategories = (callback) => {
     return dispatch=>{
     fetch(`http://localhost:3333/categories/${id}`)
       .then(res => res.json())
-      .then(json => dispatch(products_by_category_Action(json))  )
+      .then(json => dispatch(productsByCategoryAction(json))  )
   }}
