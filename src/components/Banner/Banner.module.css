@@ -9,6 +9,7 @@
   display: flex;
   gap: 100px;
   height: 600px;
+  flex-direction: row-reverse;
 }
 
 .slide1 {
@@ -33,15 +34,44 @@
     #23373a,
     #212123
   );
-  
+
   background-size: cover;
 }
 
 .slide4 {
-  background-image: linear-gradient(to left, #d7dcc6, #b0c1b2, #8fa59e, #74898a, #5e6d73, #505d69, #474d5d, #423d4f, #473248, #4d253a, #4f1726, #4b0d0d,#212123);
+  background-image: linear-gradient(
+    to left,
+    #d7dcc6,
+    #b0c1b2,
+    #8fa59e,
+    #74898a,
+    #5e6d73,
+    #505d69,
+    #474d5d,
+    #423d4f,
+    #473248,
+    #4d253a,
+    #4f1726,
+    #4b0d0d,
+    #212123
+  );
 }
 .slide3 {
-  background-image: linear-gradient(to left,#d7dcc6, #c9cba4, #c0b981, #baa560, #b5913f, #b47939, #af6238, #a54b3b, #873c4b, #5f354d, #392d3e, #212123);
+  background-image: linear-gradient(
+    to left,
+    #d7dcc6,
+    #c9cba4,
+    #c0b981,
+    #baa560,
+    #b5913f,
+    #b47939,
+    #af6238,
+    #a54b3b,
+    #873c4b,
+    #5f354d,
+    #392d3e,
+    #212123
+  );
 }
 /* .slide5 {
   background-image: linear-gradient(to left, #380e0e, #908436, #908862);
@@ -52,13 +82,40 @@
   padding: 25px 50px;
   border-radius: 15px;
   background-color: white;
-  font-size: 25px;
-  color: black;
+  font-size: 30px;
+  box-shadow: 0 0 10px 5px #4ba983;
   font-weight: 700;
   cursor: pointer;
-  box-shadow: 0 0 10px 3px #4ba983;
+  color:#212123;
+  letter-spacing: 5px;
+  animation: move linear 4000ms infinite;
 }
 
+@keyframes move {
+  0% {
+    text-shadow: 5px -5px 0 hsla(0, 100%, 50%, 1),
+      4px -4px 0 hsla(0, 100%, 50%, 1), 3px -3px 0 hsla(0, 100%, 50%, 1),
+      2px -2px 0 hsla(0, 100%, 50%, 1), -4px 4px 0 hsla(180, 100%, 50%, 1),
+      -3px 3px 0 hsla(180, 100%, 50%, 1), -2px 2px 0 hsla(180, 100%, 50%, 1),
+      -1px 1px 0 hsla(180, 100%, 50%, 1);
+  }
+
+  50% {
+    text-shadow: -4px 4px 0 hsla(0, 100%, 50%, 1),
+      -3px 3px 0 hsla(0, 100%, 50%, 1), -2px 2px 0 hsla(0, 100%, 50%, 1),
+      -1px 1px 0 hsla(0, 100%, 50%, 1), 4px -4px 0 hsla(180, 100%, 50%, 1),
+      3px -3px 0 hsla(180, 100%, 50%, 1), 2px -2px 0 hsla(180, 100%, 50%, 1),
+      1px -1px 0 hsla(180, 100%, 50%, 1);
+  }
+
+  100% {
+    text-shadow: 4px -4px 0 hsla(0, 100%, 50%, 1),
+      3px -3px 0 hsla(0, 100%, 50%, 1), 2px -2px 0 hsla(0, 100%, 50%, 1),
+      1px -1px 0 hsla(0, 100%, 50%, 1), -4px 4px 0 hsla(180, 100%, 50%, 1),
+      -3px 3px 0 hsla(180, 100%, 50%, 1), -2px 2px 0 hsla(180, 100%, 50%, 1),
+      -1px 1px 0 hsla(180, 100%, 50%, 1);
+  }
+}
 .content {
   display: flex;
   flex-direction: column;
@@ -76,11 +133,9 @@
 .title {
   font-size: 70px;
   font-weight: 700;
-  
 }
 
 .sub_title {
-
   font-size: 55px;
   font-weight: 700;
 }

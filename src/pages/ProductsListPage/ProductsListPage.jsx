@@ -1,6 +1,6 @@
 import React from "react";
 import ProductsContainer from "../../components/ProductsContainer/ProductsContainer";
-import { useDispatch, useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 
 import FilterForm from "../../components/FilterForms/FilterForm/FilterForm";
 import SortForm from "../../components/FilterForms/SortForm/SortForm";
