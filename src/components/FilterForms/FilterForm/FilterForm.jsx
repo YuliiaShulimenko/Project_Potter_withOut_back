@@ -5,7 +5,7 @@ import { filterProductsAction } from '../../../store/reducers/products_reducer';
 import s from "./FilterForm.module.css";
 import { filterCategoryProductsAction } from '../../../store/reducers/catogory_prod_reducer';
 
-function FilterForm({ location }) {
+function FilterForm() {
   const dispatch = useDispatch();
 
   const handleInputChange = (e) => {
@@ -15,11 +15,10 @@ function FilterForm({ location }) {
     const max_value = max.value || Infinity;
      //в качестве пейлоуда обект с мин и макс занчениями
 
-    dispatch(
-      location === 'category_products'
-        ? filterCategoryProductsAction({ min_value, max_value })
-        : filterProductsAction({ min_value, max_value })
-    );
+    dispatch(filterCategoryProductsAction({ min_value, max_value }))
+    dispatch  ( filterProductsAction({ min_value, max_value }))
+  
+    
   };
 
   return (

@@ -35,12 +35,12 @@ function CategoryProductsPage() {
       <h2 className={s.title}>{title}</h2>
      
       <div className={s.form}>
-        <FilterForm location={location}/>
+        <FilterForm />
         <br />
         <DiscountCheck 
-        location={location}/>
+       />
         <br />
-        <SortForm location={location}/>
+        <SortForm />
       </div>
       <ProductsContainer products={prodCat} location={location}
       />

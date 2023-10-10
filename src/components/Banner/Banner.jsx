@@ -3,6 +3,7 @@ import s from "./Banner.module.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import flowers from "../../images/102.gif";
+import secondSlide from "../../images/0108.gif";
 import ron from "../../images/0102.gif";
 import dom from "../../images/15.gif";
 import { Link } from "react-router-dom";
@@ -24,10 +25,11 @@ function Banner() {
   const textContent = [
     { title: "Sale %", subTitle: "New season" },
     { title: "New collection", subTitle: "...soon" },
-    { title: "", subTitle: "Gifts to new customers" },
+    { title: "Gifts", subTitle: " to new customers" },
+    { title: "Wellcome!!!", subTitle: "" },
   ];
 
-  const slides = [flowers, ron, dom];
+  const slides = [flowers,ron,dom, secondSlide];
 
   return (
     <div className={s.banner_wrapper}>

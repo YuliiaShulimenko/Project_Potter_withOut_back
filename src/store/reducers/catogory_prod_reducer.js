@@ -101,3 +101,34 @@ export const products_by_category_Reducer = (state = default_state, action) => {
 
   return state;
 };
+
+
+
+
+// else if(action.type === FILTER_PRODUCTS) {
+//   const { min_value, max_value } = action.payload;
+//   return state.map(el => {
+//     let actualPrice = el.discont_price || el.price
+//     if(actualPrice >= min_value && actualPrice <= max_value){
+//       el.show_product = true
+//     } else {
+//       el.show_product = false
+//     }
+//     return el
+//   })
+// }
+
+// else if(action.type === FILTER_PRODUCTS){
+//       const {minValue, maxValue} = action.payload
+      
+//       const filterData = state.data.map(el => {
+//           let actualPrice = el.discont_price || el.price;
+//           if (actualPrice >= minValue && actualPrice <= maxValue) {
+//               el.show_product = true;
+//           } else {
+//               el.show_product = false;
+//           }
+//           return el
+//       });
+//       return {...state, data: filterData }
+//   }

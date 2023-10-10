@@ -37,15 +37,15 @@
   background-size: cover;
 }
 
+.slide4 {
+  background-image: linear-gradient(to left, #d7dcc6, #b0c1b2, #8fa59e, #74898a, #5e6d73, #505d69, #474d5d, #423d4f, #473248, #4d253a, #4f1726, #4b0d0d,#212123);
+}
 .slide3 {
-  background-image: linear-gradient(to left, #380e0e, #908436, #908862);
+  background-image: linear-gradient(to left,#d7dcc6, #c9cba4, #c0b981, #baa560, #b5913f, #b47939, #af6238, #a54b3b, #873c4b, #5f354d, #392d3e, #212123);
 }
-/* .slide4 {
+/* .slide5 {
   background-image: linear-gradient(to left, #380e0e, #908436, #908862);
-}
-.slide5 {
-  background-image: linear-gradient(to left, #380e0e, #908436, #908862);
-} */
+}  */
 
 .sale_btn {
   margin-top: 60px;
