@@ -26,7 +26,7 @@ function CartPage() {
        
         <div className={s.cart_list_container}>
         {cart.length !== 0 ? <CartContainer/>:
-         <p className={s.warning}>Your Cart Is Empty!</p>}
+         <p className={s.text}>Your Cart Is Empty!</p>}
         <OrderDetails/>
     </div>
 

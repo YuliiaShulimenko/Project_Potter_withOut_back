@@ -1,5 +1,7 @@
 //action.payload -строка поиска
 
+///////////////////////////////////////////////////////////////////////
+//-ПОСТАРАТЬСЯ УСПЕТЬ ОБЪЕДЕНИТЬ РЕДЬЮСЕРЫ ПРОДУКТС И ПРОДУКТС БАЙ КАТ//
 const LOAD_ALL_PRODUCTS = "LOAD_ALL_PRODUCTS";
 const SEARCH_PRODUCTS = "SEARCH_PRODUCTS";
 const SORT_PRODUCTS = "SORT_PRODUCTS";

@@ -24,7 +24,7 @@ function Banner() {
   const textContent = [
     { title: "Sale %", subTitle: "New season" },
     { title: "New collection", subTitle: "...soon" },
-    { title: "Gifts to new customers", subTitle: "" },
+    { title: "", subTitle: "Gifts to new customers" },
   ];
 
   const slides = [flowers, ron, dom];

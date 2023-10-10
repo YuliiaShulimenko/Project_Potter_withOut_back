@@ -5,6 +5,12 @@ import { useDispatch } from "react-redux";
 import { getAllProducts } from "../../requests/products_request";
 import Pagination from "../Pagination/Pagination";
 
+
+
+
+
+///////////////////////////////////////////////////////////////////////
+//-ПОСТАРАТЬСЯ УСПЕТЬ ОБЪЕДЕНИТЬ РЕДЬЮСЕРЫ ПРОДУКТС И ПРОДУКТС БАЙ КАТ//
 function ProductsContainer({ products, containerStyles, location }) {
   products = products.filter(
     (el) => el.showByKeyWord && el.show_product && el.sale_products
