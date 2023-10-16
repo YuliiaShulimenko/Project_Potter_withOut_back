@@ -13,14 +13,6 @@ function SaleRandom() {
     (product) => product.discont_price
   );
 
-  // Генерируем 4 случайных продукта
-  // const randomProducts = getRandomProducts(discountProducts, 3);
-
-  // Функция для получения случайных продуктов
-  // function getRandomProducts(arr, num) {
-  //   const shuffled = [...arr].sort(() => 0.5 - Math.random());
-  //   return shuffled.slice(0, num);
-  // }
 
   const getRandomProducts = () => {
     const sale_products = [...discountProducts].sort(() => Math.random() - 0.5); //сортируем продукты со скидкой рандомным методом
@@ -50,3 +42,14 @@ function SaleRandom() {
 }
 
 export default SaleRandom;
+
+
+
+  // Генерируем 4 случайных продукта
+  // const randomProducts = getRandomProducts(discountProducts, 3);
+
+  // Функция для получения случайных продуктов
+  // function getRandomProducts(discountProducts, num) {
+  //   const sale_products = [...discountProducts].sort(() => 0.5 - Math.random());
+  //   return sale_products.slice(0, discountProducts);
+  // }

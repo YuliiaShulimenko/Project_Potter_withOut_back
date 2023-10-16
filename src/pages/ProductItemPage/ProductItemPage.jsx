@@ -27,6 +27,7 @@ function ProductItemPage() {
     e.preventDefault();
     dispatch(addToCartAction(product));
     setClicked(true); // Устанавливаем состояние clicked в true при клике
+    // alert ("Add to cart")
   };
   return (
     <div className={s.product_info}>
