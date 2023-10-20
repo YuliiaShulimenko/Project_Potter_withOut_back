@@ -4,6 +4,7 @@
   background-image: linear-gradient(to right, #d7dcc6, #b6d4bb, #8cccbe, #61c1cc, #47b2dc, #41a0cc, #3d8ebc, #397cab, #266682, #234e5c, #23373a, #1f2020);
   display: flex;
   justify-content: space-around;
+  
 }
 
 .discount_left {
@@ -42,6 +43,7 @@
   display: flex;
   flex-direction: column;
   width: 470px;
+
 }
 
 .form_btn {

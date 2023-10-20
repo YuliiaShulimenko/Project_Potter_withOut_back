@@ -9,6 +9,8 @@ function SortForm({location}) {
   const order = (e) => 
   // dispatch(sortProductsAction(e.target.value));
   dispatch(location === 'category_products' ? sortCategoryProductsAction(e.target.value) : sortProductsAction(e.target.value))
+
+  
   //в качестве пейлоуда значение валью
   return (
     <div className={s.filter_sort}>

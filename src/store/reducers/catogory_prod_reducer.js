@@ -51,14 +51,12 @@ export const productsByCategoryReducer = (state = default_state, action) => {
     } else if (action.payload === "price_asc") {
       sortedData.sort(
         (a, b) =>
-          (a.discont_price ? a.discont_price : a.price) -
-          (b.discont_price ? b.discont_price : b.price)
+          (a.discont_price ? a.discont_price : a.price) -(b.discont_price ? b.discont_price : b.price)
       );
     } else if (action.payload === "price_desc") {
       sortedData.sort(
         (a, b) =>
-          (b.discont_price ? b.discont_price : b.price) -
-          (a.discont_price ? a.discont_price : a.price)
+          (b.discont_price ? b.discont_price : b.price) -(a.discont_price ? a.discont_price : a.price)
       );
     } else if (action.payload === "default") {
       sortedData.sort((a, b) => a.id - b.id);

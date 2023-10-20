@@ -38,7 +38,7 @@ function CategoryProductsPage() {
         <br />
         <DiscountCheck />
         <br />
-        <SortForm />
+        <SortForm location={location}/>
       </div>
       <ProductsContainer products={prodCat} location={location} />
     </div>
