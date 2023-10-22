@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import NavLinks from "../NavLinks/NavLinks";
 import s from "./Header.module.css";
 import logo from "../../images/54.gif";
-import cart from "../../images/4.png";
+
 import { Link } from "react-router-dom";
 import user from "../../images/acc.gif";
 
+import { faCartArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { useSelector } from "react-redux";
 import Modal from "../Registration/Modal/Modal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -27,7 +28,7 @@ function Header() {
       </div>
 
       <NavLinks />
-
+<div className={s.icons}>
   {/* /////////// LIKES-Favourites /////////// */}    
       <div className={s.hard}>
       
@@ -46,12 +47,15 @@ function Header() {
       <h4>Account</h4>
     </div>
     {/* /////////// CART /////////// */}
-      <Link to="/shopping_cart">
-        <div className={s.cart}>
-          <img src={cart} alt="cart" />
-          {count}
-        </div>
+    <div className={s.cart}>
+    <Link to="/shopping_cart">
+    <FontAwesomeIcon icon={faCartArrowDown} className={s.cartIcon} />
+    <h4>Cart {count}</h4>
+          
+        
       </Link>
+      </div>
+    </div>
     </div>
   );
 }

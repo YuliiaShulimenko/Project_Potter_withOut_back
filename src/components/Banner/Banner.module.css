@@ -183,7 +183,7 @@
 
 
 
-@media (max-width:1080px) {
+@media (max-width:1300px) {
   .banner_sale {
    display: flex;
    justify-content: center;
@@ -207,25 +207,30 @@
     width: 100%;
   }
 }
-/* 
+
 @media (max-width:760px) {
+
   .banner_sale {
+    display: flex;
     justify-content: center;
-    position: relative;
-  }
-
-  .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 100px;
-    text-shadow: 2px 2px 15px black;
-  }
-
-  .image {
-    margin: 0;
-    width: 100%;
-    object-fit: cover;
-    object-position: center 75%;
-  }
-} */
+   }
+ 
+   .title {
+     font-size: 60px;
+   }
+ 
+   .sub_title {
+     font-size:40px;
+   }
+ 
+   .image_box {
+    display: none;
+   }
+   .dots{
+     display: flex;
+     justify-content: center;
+     right:0;
+     width: 100%;
+   }
+ }
+ 

@@ -11,7 +11,7 @@ import Pagination from "../Pagination/Pagination";
 
 ///////////////////////////////////////////////////////////////////////
 //-ПОСТАРАТЬСЯ УСПЕТЬ ОБЪЕДЕНИТЬ РЕДЬЮСЕРЫ ПРОДУКТС И ПРОДУКТС БАЙ КАТ//
-function ProductsContainer({ products, containerStyles, location }) {
+function ProductsContainer({ products, location }) {
   products = products.filter(
     (el) => el.showByKeyWord && el.show_product && el.sale_products
   );
@@ -31,7 +31,7 @@ function ProductsContainer({ products, containerStyles, location }) {
 
   return (
     <div className={s.main}>
-      <div className={s.products_container} style={containerStyles}>
+      <div className={s.products_container} >
         {todosPageList.map((el) => (
           <ProductItem key={el.id} product={el} />
         ))}

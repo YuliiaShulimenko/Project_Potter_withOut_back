@@ -3,3 +3,26 @@
     grid-template-columns: repeat(4,1fr);
     margin: 50px;
 }
+
+@media (max-width: 1360px) {
+  
+    .container {
+     
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-around;
+    }
+  }
+  
+  @media (max-width: 1080px) {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-around;
+    }
+  }
+  
+  @media (max-width: 760px) {
+    .container {
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
+  }

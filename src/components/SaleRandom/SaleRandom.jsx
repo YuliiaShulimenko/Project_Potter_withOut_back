@@ -21,10 +21,7 @@ function SaleRandom() {
 
   const randomProducts = getRandomProducts();
 
-  const containerStyles = {
-    dispaly: "flex",
-    justifyContent: "space-between",
-  };
+ 
 
   //для того , чтобы пагинатор не отображался на главной странице,передаем потом пропсом в контейнер
   const location = "home";
@@ -34,7 +31,7 @@ function SaleRandom() {
       {/* Передаем массив случайных продуктов в компонент ProductsContainer */}
       <ProductsContainer
         products={randomProducts}
-        containerStyles={containerStyles}
+     
         location={location}
       />
     </div>
@@ -53,3 +50,6 @@ export default SaleRandom;
   //   const sale_products = [...discountProducts].sort(() => 0.5 - Math.random());
   //   return sale_products.slice(0, discountProducts);
   // }
+
+
+

@@ -13,22 +13,27 @@ box-shadow: 0 0 10px 3px #4ba983;
 cursor: pointer
 
 }
-
+.icons{
+    display: flex;
+    gap: 20px;
+}
 .img{
     border-radius: 50%;
     box-shadow: 0 0 10px 3px #4ba983;
     height: 100px;
     width: 100px;
 }
+
 .user{
     box-shadow: 0 0 10px 3px #4ba983;
     border-radius: 50%;
     height: 45px;
-    width: 45px;
+    width:45px;
+   
     
 }
 
-.user:hover{
+.accaunt:hover{
    scale: 1.3;
 }
 .header{
@@ -44,45 +49,70 @@ cursor: pointer
     align-items: center;
 }
 
-.cart{cursor: pointer;
-color: white;
-}
 
-.cart img{
-    height: 35px;
-    height: 35px;
 
-}
 .cart:hover{scale: 1.3;
   
 }
 .catalog:hover{
     scale: 1.3;
 }
-
-.heart_icon{
+.cartIcon{
     width: 25px;       
-    height: 25px; 
+    height: 25px;
+    padding: 10px;
+    box-shadow: 0 0 10px 3px #4ba983;
+    border-radius: 50%;
+    color: white; }
+.heart_icon{
+    width: 15px;       
+    height: 15px; 
     padding: 10px;
     box-shadow: 0 0 10px 3px #4ba983;
     border-radius: 50%;
     color: white;
   
 }
-
-.heart_icon:hover{
+.accaunt h4{
+    margin-top: 10px;
+}
+.heart_icon,.cartIcon:hover{
     scale: 1.3;
 }
 
-
-.hard,.accaunt{
+h4{
+    color: white;
+   text-align: center;
+   margin-top: 15px;
+}
+.hard h4{
+   
+    margin-top: 20px;
+}
+.hard,.accaunt,.cart{
     flex-direction: column;
     font-size: 10px;
     display: flex;
-   font-weight: lighter;
     gap: 4px;
+    height: 55px;
     align-items: center;
-    height: 50px;
-    justify-content: center
+    justify-content: center;
+    color: white;
+}
+
+@media (max-width: 1360px) {
+    .icons {
+        display: flex;
+        font-size: 10px;
+      
+       flex-direction: column;
+       width: 300px;
+       margin: 20px;
+
+    }
+    .icons h4{
+     display: none;
+    }
+  
 }
 
