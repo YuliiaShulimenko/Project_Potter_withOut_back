@@ -73,6 +73,8 @@ cursor: pointer
     color: white;
   
 }
+
+
 .accaunt h4{
     margin-top: 10px;
 }
@@ -87,7 +89,7 @@ h4{
 }
 .hard h4{
    
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .hard,.accaunt,.cart{
     flex-direction: column;
@@ -104,15 +106,24 @@ h4{
     .icons {
         display: flex;
         font-size: 10px;
-      
        flex-direction: column;
-       width: 300px;
-       margin: 20px;
+    justify-content: flex-start;
+    align-items: center;
 
     }
-    .icons h4{
+
+    .heart_icon,.user,.cartIcon{
      display: none;
     }
   
+  .hard,.accaunt,.cart{
+    height: 20px;
+    margin: 0;
+  }
+  
+  h4,.hard h4,.accaunt h4 {
+    margin-top: 0;
+    
+  }
 }
 

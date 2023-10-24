@@ -17,9 +17,12 @@ import { useDispatch } from "react-redux";
 
 import FavouritesPage from "./pages/FavouritesPage/FavouritesPage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
-import AccountPage from "./pages/AccountPage/AccountPage";
+
 import { getAllProducts } from "./requests/products_request";
 import { getAllCategories } from "./requests/category_request";
+import Login from "./pages/AccountPages/Login/Login";
+import Registraition from "./pages/AccountPages/Registraition/Registraition";
+import Reset from "./pages/AccountPages/Reset/Reset";
 
 function App() {
   const dispatch = useDispatch();
@@ -31,18 +34,19 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/products/:id_prod" element={<ProductItemPage />} />
-
         <Route path="/categories/all" element={<CategoriesList />} />
         <Route path="/categories/:id" element={<CategoryProductsPage />} />
-
         <Route path="/products/all" element={<ProductsListPage />} />
-
         <Route path="/shopping_cart" element={<CartPage />} />
         <Route path="/sale" element={<SalePage />} />
-
         <Route path="/favourites" element={<FavouritesPage />} />
-        <Route path="/login" element={<AccountPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/reg" element={<Registraition />} />
+        <Route path="/login" element={<Reset />} />
         <Route path="*" element={<NotFoundPage />} />
+
+
+
       </Routes>
       <Footer />
     </div>

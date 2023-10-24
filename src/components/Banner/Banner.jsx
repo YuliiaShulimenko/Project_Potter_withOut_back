@@ -33,6 +33,7 @@ function Banner() {
 
   return (
     <div className={s.banner_wrapper}>
+      
       <Slider {...settings} ref={(slider) => (sliderRef.current = slider)}>
         {slides.map((image, index) => {
           const { title, subTitle } = textContent[index];

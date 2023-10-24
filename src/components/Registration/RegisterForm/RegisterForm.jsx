@@ -40,7 +40,7 @@ function RegisterForm({title, input, type, link, button, infoText}){
 
     return(
         <div>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={handleSubmit(onSubmit)} className={s.form}>
                 <h2>{title}</h2>
 
                 <p>{input.email}</p>
