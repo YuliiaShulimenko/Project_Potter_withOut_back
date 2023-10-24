@@ -42,7 +42,7 @@ function App() {
         <Route path="/favourites" element={<FavouritesPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/reg" element={<Registraition />} />
-        <Route path="/login" element={<Reset />} />
+        <Route path="/reset" element={<Reset />} />
         <Route path="*" element={<NotFoundPage />} />
 
 

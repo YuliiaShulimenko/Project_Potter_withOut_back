@@ -1,29 +1,29 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import s from './NavLinks.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+// import React, { useState } from 'react';
+// import { Link } from 'react-router-dom';
+// import s from './NavLinks.module.css';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-function NavLinks() {
+// function NavLinks() {
 
 
-  return (
-    <div className={s.nav_menu}>
-      {/* <div className={s.burger} >
+//   return (
+//     <div className={s.nav_menu}>
+//       {/* <div className={s.burger} >
     
-         <FontAwesomeIcon icon={faBars} className={s.burger_icon} />
+//          <FontAwesomeIcon icon={faBars} className={s.burger_icon} />
          
-      </div> */}
+//       </div> */}
 
-      {/* <div className={clicked ? s.linksSmall : s.links}> */}
-      <div  className={s.links}>
-        <Link to="/">HOME</Link>
-        <Link to="/products/all">ALL PRODUCTS</Link>
-        <Link to="/sale">SALE</Link>
-      </div>
-      </div>
+//       {/* <div className={clicked ? s.linksSmall : s.links}> */}
+//       <div  className={s.links}>
+//         <Link to="/">HOME</Link>
+//         <Link to="/products/all">ALL PRODUCTS</Link>
+//         <Link to="/sale">SALE</Link>
+//       </div>
+//       </div>
     
-  );
-}
+//   );
+// }
 
-export default NavLinks;
+// export default NavLinks;
