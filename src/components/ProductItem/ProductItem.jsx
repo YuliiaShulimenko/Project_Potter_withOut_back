@@ -14,40 +14,41 @@ import {addToFavouritesAction } from "../../store/reducers/liked_reducer";
 
 export default function ProductItem({ product }) {
 
-  // const [clicked, setClicked] = useState(false);
+  const [clicked, setClicked] = useState(false);
   const [liked, setLiked] = useState(false);
 
   const dispatch = useDispatch();
 
-  // const clickHandler = (e) => {
-  //   e.preventDefault();
-  //   dispatch(addToCartAction(product));
-  //   setClicked(true);
-  // };
+  const clickHandler = (e) => {
+    e.preventDefault();
+    dispatch(addToCartAction(product));
+    setClicked(true);
+  };
 
   const likedHandler = (e) => {
     e.preventDefault();
     dispatch(addToFavouritesAction(product));
+
     setLiked(true);
  
   };
 
   const { image, title, price, discont_price, id, rating } = product;
 
-  // Отображение рейтинга в звездах
-  // const stars = [];
-  // for (let i = 1; i <= 5; i++) {
-  //   if (i <= Math.round(rating)) {
-  //     stars.push(<FontAwesomeIcon icon={faStar} className={s.active} key={i} />);
-  //   } else {
-  //     stars.push(<FontAwesomeIcon icon={faStar} key={i} />);
-  //   }
-  // }
+  // Отображение рейтинга в звездах!!!!!!!!!!!!Доделать,не точное закрашивание
+  const stars = [];
+  for (let i = 1; i <= 5; i++) {
+    if (i <= Math.round(rating)) {
+      stars.push(<FontAwesomeIcon icon={faStar} className={s.active} key={i} />);
+    } else {
+      stars.push(<FontAwesomeIcon icon={faStar} key={i} />);
+    }
+  }
 
   const title_short = title.slice(0, 60) + ' ... ';
   const discount = Math.floor(((price - discont_price) / price) * 100);
-  // const buttonText = clicked ? 'ADDED' : 'Add To Cart';
-  // const buttonClass = clicked ? `${s.add_btn} ${s.clicked}` : s.add_btn;
+  const buttonText = clicked ? 'In cart' : 'Add To Cart';
+  const buttonClass = clicked ? `${s.add_btn} ${s.clicked}` : s.add_btn;
 
   const heartClass = liked ? `${s.heart_icon} ${s.liked}` : s.heart_icon;
 
@@ -78,18 +79,19 @@ export default function ProductItem({ product }) {
   <span>{title_short}</span>
   <span className={s.read_more}>Read more</span>
 </p>
-          {/* <div className={s.rating}>Rating: {rating}/{stars}</div> */}
+          <div className={s.rating}>Rating: {rating}/{stars}</div>
         </div>
       </Link>
       <div
-        // className={buttonClass}
-        className={s.add_btn}
-        onClick={()=>dispatch(addToCartAction(product))}
+        className={buttonClass}
+    
+        onClick={clickHandler}
+     
       >
-       Add to cart
+      {buttonText}
       </div>
       <div className={heartClass}>
-        <FontAwesomeIcon icon={faHeart} onClick={likedHandler} />
+        <FontAwesomeIcon icon={faHeart} onClick={likedHandler}/>
       </div>
     </div>
   );

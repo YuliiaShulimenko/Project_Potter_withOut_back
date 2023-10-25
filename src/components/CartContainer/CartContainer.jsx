@@ -12,7 +12,7 @@ function CartContainer() {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
 
-//в момент когда юудет происходить обновление и монтирование компонента из-за сущности cart,будет записываться в ЛокСторидж наш стейт
+//в момент когда будет происходить обновление и монтирование компонента из-за сущности cart,будет записываться в ЛокСторидж наш стейт
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart));
   }, [cart]);

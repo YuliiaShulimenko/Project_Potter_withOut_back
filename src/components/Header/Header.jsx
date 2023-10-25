@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NavLinks from "../NavLinks/NavLinks";
+
 import s from "./Header.module.css";
 import logo from "../../images/54.gif";
 import { Link } from "react-router-dom";
@@ -8,7 +8,7 @@ import { faCartArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons"; // Import the faBars icon
+import { faBars } from "@fortawesome/free-solid-svg-icons"; 
 
 function Header() {
   const count = useSelector((state) => state.cart).length;
@@ -36,6 +36,8 @@ function Header() {
         <Link to="/categories/all">
         <div className={s.catalog}>Catalog</div>
         </Link>
+
+
             <FontAwesomeIcon
             icon={faBars}
             size="sm"

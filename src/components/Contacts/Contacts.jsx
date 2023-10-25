@@ -29,7 +29,11 @@ export default function Contacts() {
         </div>
         <div className={s.address}>
           <h3 className={s.title}>Address</h3>
-          <h3 className={s.link}>Linkstraße 2, 8 OG, 10785, Berlin, Deutschland</h3>
+          <a 
+            className={s.link}
+            href="https://tel-ran.de/" 
+
+          >Linkstraße 2, 8 OG, 10785, Berlin, Deutschland </a>
           <p className={s.address_p1}>Working Hours:</p>
           <p className={s.address_p2}>24 hours a day</p>
         </div>

@@ -163,6 +163,7 @@
 
 
 
+
 .prodItem:hover .add_btn {
   visibility: visible;
  
@@ -223,13 +224,10 @@ a {
 
 }
 
-.clicked {
-  background-color: rgb(63, 8, 117); 
-color: white;
-opacity: 1;
-padding: 25px;
-width: fit-content;
-font-size: 22px;}
+.clicked{
+  background-image: var(--background-image);
+  color: white;
+}
 
 .product_container {
   display: flex;
