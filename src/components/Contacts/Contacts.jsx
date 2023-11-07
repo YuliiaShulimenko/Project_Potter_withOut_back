@@ -14,7 +14,7 @@ export default function Contacts() {
       <div className={s.wrapper}>
         <div className={s.contact}>
           <h3 className={s.title}>Contact</h3>
-          <h2 className={s.phone_number}>+49 999 999 99 99</h2>
+          <a href="tel:+499999999999" className={s.phone_number}>+49 999 999 99 99 </a>
           <div className={s.social}>
             <div>
             <a href={instagramURL} >

@@ -35,6 +35,8 @@ export default function ProductItem({ product }) {
 
   const { image, title, price, discont_price, id, rating } = product;
 
+  // let text="agasgAM N KN"
+
   // Отображение рейтинга в звездах!!!!!!!!!!!!Доделать,не точное закрашивание
   const stars = [];
   for (let i = 1; i <= 5; i++) {
@@ -93,6 +95,10 @@ export default function ProductItem({ product }) {
       <div className={heartClass}>
         <FontAwesomeIcon icon={faHeart} onClick={likedHandler}/>
       </div>
+      {/* <button onClick={()=>{
+        text="Hello word"
+      }}>ADD BTN</button>
+      <h1>{text}</h1> */}
     </div>
   );
 }
